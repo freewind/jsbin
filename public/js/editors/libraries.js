@@ -64,6 +64,12 @@ var libraries = [
 //     'label': 'jQuery 1.6.4',
 //     'group': 'jQuery'
 //   },
+  {
+    'url': '//cdn.bootcss.com/superagent/2.3.0/superagent.js',
+    'label': 'superagent 2.3.0',
+    'group': 'Ajax'
+  },
+
 //   {
 //     'url': [
 //       'https://code.jquery.com/ui/jquery-ui-git.css',
@@ -154,15 +160,16 @@ var libraries = [
 //     'label': 'jQuery Mobile 1.1.2',
 //     'group': 'jQuery Mobile'
 //   },
-//   {
-//     'url': [
-//       'https://code.jquery.com/jquery.min.js',
-//       'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
-//       'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
-//     ],
-//     'label': 'Bootstrap Latest',
-//     'group': 'Bootstrap'
-//   },
+  {
+    'url': [
+      '//cdn.bootcss.com/jquery/3.1.1/jquery.js',
+      '//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css',
+      '//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.css',
+      '//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js'
+    ],
+    'label': 'Bootstrap 3.3.7',
+    'group': 'Bootstrap'
+  },
 //   {
 //     'url': [
 //       'https://code.jquery.com/jquery.min.js',
@@ -377,16 +384,54 @@ var libraries = [
 //     'label': 'Angular Sanitize Latest',
 //     'group': 'Angular'
 //   },
-//   {
-//     'url': ['https://fb.me/react-15.1.0.js', 'https://fb.me/react-dom-15.1.0.js'],
-//     'label': 'React + React DOM 15.1.0',
-//     'group': 'React'
-//   },
-//   {
-//     'url': ['https://fb.me/react-with-addons-15.1.0.js', 'https://fb.me/react-dom-15.1.0.js'],
-//     'label': 'React with Add-Ons + React DOM 15.1.0',
-//     'group': 'React'
-//   },
+  {
+    'url': [
+      '//cdn.bootcss.com/react/15.3.2/react.js',
+      '//cdn.bootcss.com/react/15.3.2/react-dom.js'
+    ],
+    'label': 'React + React DOM 15.3.2',
+    'group': 'React'
+  },
+  {
+    'url': [
+      '//cdn.bootcss.com/react/15.3.2/react-with-addons.js',
+      '//cdn.bootcss.com/react/15.3.2/react-dom.js'
+    ],
+    'label': 'React with Add-Ons + React DOM 15.3.2',
+    'group': 'React'
+  },
+  {
+    'url': '//cdn.bootcss.com/react-router/4.0.0-2/react-router.js',
+    'label': 'react-router 4.0.0-2',
+    'group': 'React'
+  },
+  {
+    'url': '//cdn.bootcss.com/react-router-redux/4.0.7/ReactRouterRedux.js',
+    'label': 'react-router-redux 4.0.7',
+    'group': 'React'
+  },
+  {
+    'url': [
+      '//cdn.bootcss.com/react-redux/4.4.5/react-redux.js',
+      '//cdn.bootcss.com/redux/3.6.0/redux.js'
+    ],
+    'label': 'redux 3.6.0 + react-redux 4.4.5',
+    'group': 'React'
+  },
+  {
+    'url': '//cdn.bootcss.com/react-bootstrap/0.30.6/react-bootstrap.js',
+    'label': 'react-bootstrap 0.30.6',
+    'group': 'React'
+  },
+  {
+    'url': '//cdn.bootcss.com/react-router-bootstrap/0.23.1/ReactRouterBootstrap.js',
+    'label': 'react-router-bootstrap 0.23.1',
+    'group': 'React'
+  },
+
+
+
+
 //   {
 //     'url': ['https://fb.me/react-0.14.7.js', 'https://fb.me/react-dom-0.14.7.js'],
 //     'label': 'React + React DOM 0.14.7',
@@ -421,10 +466,11 @@ var libraries = [
 //     'url': 'https://cdnjs.cloudflare.com/ajax/libs/blissfuljs/1.0.2/bliss.min.js',
 //     'label': 'Bliss 1.0.2',
 //   },
-//   {
-//     'url': 'https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.js',
-//     'label': 'Vue.js 1.0.16',
-//   },
+  {
+    'url': '//cdn.bootcss.com/vue/2.0.5/vue.js',
+    'label': 'Vue.js 2.0.5',
+    'group': 'Vue'
+  },
 //   {
 //     'url': 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js',
 //     'label': 'Vue.js 2.0.3',
@@ -554,11 +600,11 @@ var libraries = [
 //     'url': 'https://cdnjs.cloudflare.com/ajax/libs/less.js/1.3.3/less.min.js',
 //     'label': 'Less 1.3.3'
 //   },
-//   {
-//     'url': 'https://cdn.jsdelivr.net/lodash/4/lodash.min.js',
-//     'label': 'lodash 4.x',
-//     'group': 'Lodash'
-//   },
+  {
+    'url': '//cdn.bootcss.com/lodash.js/4.16.6/lodash.js',
+    'label': 'lodash 4.16.6',
+    'group': 'Lodash'
+  },
 //   {
 //     'url': 'https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)',
 //     'label': 'lodash fp 4.x',
@@ -800,11 +846,11 @@ var libraries = [
 //     'label': 'PouchDB (latest)',
 //     'group': 'PouchDB'
 //   },
-//   {
-//     'url': 'https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js',
-//     'label': 'Moment 2.14.1',
-//     'group': 'Moment.js'
-//   },
+  {
+    'url': '//cdn.bootcss.com/moment.js/2.16.0/moment-with-locales.js',
+    'label': 'Moment 2.16.0',
+    'group': 'Moment.js'
+  },
 //   {
 //     'url': [
 //       'https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js',
