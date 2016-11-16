@@ -208,10 +208,14 @@ var processors = jsbin.processors = (function () {
       init: function jsx(ready) {
         // Don't add React if the code already contains a script whose name
         // starts with 'react', to avoid duplicate copies.
-        var code = editors.html.getCode();
-        if (!(/<script[^>]*src=\S*\breact\b/i).test(code)) {
-          $('#library').val( $('#library').find(':contains("React with Add-Ons")').val() ).trigger('change');
-        }
+
+// When deploying to local, found when refresh a snippet with JSX support,
+// the html content will be replace by two react script files
+// Don't know how to fix it, so disable this this for now
+//        var code = editors.html.getCode();
+//        if (!(/<script[^>]*src=\S*\breact\b/i).test(code)) {
+//          $('#library').val( $('#library').find(':contains("React with Add-Ons")').val() ).trigger('change');
+//        }
         ready();
       },
       handler: function (source, resolve, reject) {
